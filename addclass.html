@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .red{
+            color: red;
+        }
+        .important{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>KERALA</h1>
+    <p>kerala is a gods own count.</p>
+    <h2 class="bold">I LOVE DOOLS</h2>
+    <button id="btn">CLICK</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1,h2,p").addClass("red")
+                $(".btn").addClass("important")
+            })
+        })
+    </script>
+   
+</body>
+</html>

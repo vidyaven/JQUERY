@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table{
+            border: 2px solid black;
+            margin-left: 20%;
+        }
+        table,tr,th,td{
+            border: 2px solid black;
+        }
+        label{
+            margin-left: 18%;
+        }
+      .add{
+            margin-left: 22%;
+        }
+        .delete{
+            margin-left: 22%;
+        }
+    </style>
+</head>
+<body>
+<form>
+ <label> Name:</label><input type="text" id="name"><br><br>
+
+  <table>
+      <tr>
+          <th>Select Box</th>
+          <th>Name</th>
+      </tr>
+      <tr>
+          <td><input type="checkbox" id="check1"></td>
+          <td>Vidyavenugopal</td>
+
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="check1" name="record"></td>
+        <td>Vamika</td>
+
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" id="check1" name="record"></td>
+        <td>Ammu</td>
+
+    </tr>
+
+   
+
+  </table><br><br>
+  <input type="button" class="add" value="Add Customer details"><br><br>
+  <input type="button" class="delete" value="Delete details">
+</form>
+
+<script>
+$(document).ready(function(){
+    $(".add").click(function(){
+      var name= $("#name").val();
+
+   var check="<tr><td><input type='checkbox' id='check1' name='record'></td><td>"+name+"</td></tr>"
+   $("table").append(check)
+//  $("table").append(name)
+    })
+    $(".delete").click(function(){
+        $("table").find('input[name="record"]').each(function(){
+            if($(this).is(":checked")){
+                $(this).parents("tr").remove();
+            }
+        })
+    })
+})
+</script>
+
+</body>
+</html>

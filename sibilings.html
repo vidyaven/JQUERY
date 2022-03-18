@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="width: 500px;" class="sibilings">
+        <h1>hello guys</h1>
+        <ul class="frut">Fruits
+<li>Mango</li>
+<li class="grap">graps</li>
+<li class="bana">banana</li>
+<li class="ora">orange</li>
+        </ul>
+    </div>
+   
+<script>
+    $(document).ready(function(){
+        // $("li.grap").siblings().css({
+        //     "color":"red",
+        //     "border":"2px dotted black "
+        // })
+//next()
+
+// $("li.grap").next().css({
+//     "color":"black",
+//     "border":"2px dotted red"
+// })
+
+// nextall()
+// $("li.grap").nextAll().css({
+//     "color":"orange",
+//     "border":"2px dotted red"
+// })
+
+//nextuntile()
+// $("h1").nextUntil().css({
+//     "color":"orange",
+//     "border":"2px dotted red"
+// })
+
+//pre()
+
+// $("li.bana").prev().css({
+//  "color":"purple",
+//     "border":"2px dotted red"
+//  })
+
+//prevall()
+
+// $("li.ora").prevAll().css({
+//  "color":"purple",
+//    "border":"2px dotted red"
+//   })
+
+//prevuntile()
+
+$("li.bana").prevUntil().css({
+ "color":"purple",
+   "border":"2px dotted red"
+  })
+    })
+</script>
+
+</body>
+</html>

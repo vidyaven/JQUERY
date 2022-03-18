@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>hello everyone</p>
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button>
+    <script>
+        $(document).ready(function(){
+            // $("#hide").click(function(){
+            //     $("p").hide();
+            // })
+            // $("#show").click(function(){
+            //     $("p").show();
+            // })
+//double click
+
+            // $("#hide").dblclick(function(){
+            //     $("p").hide();
+            // })
+            // $("#show").dblclick(function(){
+            //     $("p").show();
+            // })
+
+//mouseenter
+// $("#hide").mouseenter(function(){
+//                 $("p").hide();
+//             })
+//             $("#show").mouseenter(function(){
+//                 $("p").show();
+//             })    
+
+//mouseleave
+// $("#hide").mouseleave(function(){
+//                 $("p").hide();
+//             })
+//             $("#show").mouseleave(function(){
+//                 $("p").show();
+//             })  
+
+//mouse up
+$("#hide").mouseup(function(){
+                $("p").hide();
+            })
+            $("#show").mouseup(function(){
+                $("p").show();
+            })  
+
+//mousedown
+$("#hide").mousedown(function(){
+                $("p").hide();
+            })
+            $("#show").mousedown(function(){
+                $("p").show();
+            })   
+
+ //mousehover
+//  $("#hide").hover(function(){
+//                 $("p").hide();
+//             })
+//             $("#show").hover(function(){
+//                 $("p").show();
+//            })              
+// //focus
+// $("#hide").focus(function(){
+//                 $("p").hide();
+//             })
+//             $("#show").focus(function(){
+//                 $("p").show();
+//             })   
+// // blur
+            $("#hide").blur(function(){
+                $("p").hide();
+            })
+            $("#show").blur(function(){
+                $("p").show();
+            })   
+        })
+    </script>
+</body>
+</html>
